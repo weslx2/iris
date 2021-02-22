@@ -58,7 +58,6 @@ const start = (kill = new Client()) => {
 				} else if (event.action == 'remove' && isWelkom) {
 					var profile = await kill.getProfilePicFromServer(event.who)
 					if (profile == '' || profile == undefined) profile = 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTQcODjk7AcA4wb_9OLzoeAdpGwmkJqOYxEBA&usqp=CAU'
-					await kill.sendFileFromUrl(event.chat, profile, 'profile.jpg', '')
 					await kill.sendTextWithMentions(event.chat, `Mais um membro ~gado~ saiu, sentiremos falta do @${event.who.replace('@c.us', '')} ... \nF. ~Agora temos -1 gado pra colheita, shit!~`)
 				}
 			} catch (err) {
