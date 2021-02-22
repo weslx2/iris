@@ -3461,9 +3461,9 @@ module.exports = kconfig = async (kill, message) => {
             }
             break
 			
-		/*case 'Nome do comando sem espaços':
-			await kill.reply(from, 'Sua mensagem', id)
-			break*/
+		case 'gp':
+			await kill.reply(from, 'Para entrar em contato com meu dono, wa.me/553799232558 ...', id)
+			break
 			
 			
         default:
