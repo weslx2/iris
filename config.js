@@ -2063,7 +2063,7 @@ module.exports = kconfig = async (kill, message) => {
 			}
             break
 
-
+        case 'k':
         case 'kick':
 			if (isGroupMsg && isGroupAdmins || isGroupMsg && isOwner) {
 				if (!isBotGroupAdmins) return kill.reply(from, mess.error.Ba, id)
