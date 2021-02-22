@@ -3269,7 +3269,7 @@ module.exports = kconfig = async (kill, message) => {
 			}
 			break
 			
-			
+	case 'autos':	
         case 'autosticker':
             if (!isGroupMsg) return await kill.reply(from, mess.error.Gp, id)
             if (!isGroupAdmins) return await kill.reply(from, mess.error.Ga, id)
@@ -3318,7 +3318,7 @@ module.exports = kconfig = async (kill, message) => {
 			}
 			break
 			
-			
+		case 'gpp':		
 		case 'allid':
 			const gpids = await kill.getAllGroups()
 			let idmsgp = ''
@@ -3361,7 +3361,7 @@ module.exports = kconfig = async (kill, message) => {
             }
             break
 			
-			
+	case 'lvl':		
         case 'level':
             if (!isxp) return await kill.reply(from, 'Para usar isso ative o sistema de XP.', id)
             if (!isGroupMsg) return await kill.reply(from, mess.error.Gp, id)
